@@ -1,0 +1,55 @@
+/* Garten / Gartenbau — generated from Figma Theme mode "Garten".
+   Forest green, warm neutrals. Softer, carries more photography.
+   Regenerate; do not hand-edit. Source of truth: Figma file UK0KdruELZEFxDn2vZJ73K. */
+
+:root {
+  --color-bg-page: #ffffff;
+  --color-bg-subtle: #f7f8f9;
+  --color-bg-inverse: #11270f;
+  --color-bg-brand: #3a7d32;
+  --color-bg-brand-subtle: #f0f6ef;
+  --color-bg-emergency: #c1272d;
+
+  --color-surface-default: #ffffff;
+  --color-surface-sunken: #f7f8f9;
+
+  --color-text-primary: #12161a;
+  --color-text-secondary: #4a525c;
+  --color-text-muted: #656d78;
+  --color-text-inverse: #ffffff;
+  --color-text-brand: #2d6527;
+  --color-text-link: #2d6527;
+  --color-text-on-brand: #ffffff;
+
+  --color-border-default: #dde1e6;
+  --color-border-strong: #c1c7cf;
+  --color-border-control: #8d95a0;
+  --color-border-brand: #3a7d32;
+  --color-border-focus: #559a4b;
+
+  --color-cta-bg: #3a7d32;
+  --color-cta-bg-hover: #2d6527;
+  --color-cta-fg: #ffffff;
+  --color-cta-emergency-bg: #c1272d;
+  --color-cta-emergency-bg-hover: #9e1f24;
+  --color-cta-emergency-fg: #ffffff;
+
+  --color-icon-default: #4a525c;
+  --color-icon-brand: #3a7d32;
+  --color-icon-inverse: #ffffff;
+  --color-icon-on-brand: #ffffff;
+
+  --color-status-danger-fg: #c1272d;
+  --color-status-danger-bg: #fcebec;
+  --color-status-success-fg: #2e7d32;
+  --color-status-success-bg: #eaf4ea;
+  --color-status-warning-fg: #8a5200;
+  --color-status-warning-bg: #fff4e0;
+  --color-status-info-fg: #1f5a9b;
+  --color-status-info-bg: #eaf2fa;
+
+  --color-focus-ring: #2d6527;
+  --color-focus-ring-offset: #ffffff;
+
+  --color-overlay-scrim: #12161a;
+}

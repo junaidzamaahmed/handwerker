@@ -1,0 +1,35 @@
+{
+  "name": "handwerk-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Productised website template for Swiss/DACH trades businesses (Handwerker).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "check:purity": "tsx scripts/check-template-purity.ts",
+    "check": "npm run typecheck && npm run check:purity && npm run check:contrast",
+    "build:check": "next build --no-lint",
+    "check:contrast": "tsx scripts/check-contrast.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "next-intl": "^3.26.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.0",
+    "gray-matter": "^4.0.3",
+    "next-mdx-remote": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

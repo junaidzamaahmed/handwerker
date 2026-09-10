@@ -1,0 +1,30 @@
+{
+  "_note": "Compiled by hand on 2026-09-10 from the public Google Business Profile of D&D Handwerker, Muttenz. Rating, total and star distribution are exact. Review text is verbatim, trimmed at a sentence boundary where Google truncated it, and never edited or invented. Author names abbreviated to first name + initial. Set integrations.googlePlaceId to let scripts/fetch-reviews.ts replace this file at build time.",
+  "fetchedAt": "2026-09-10",
+  "rating": 4.9,
+  "total": 46,
+  "distribution": { "5": 45, "4": 0, "3": 0, "2": 0, "1": 1 },
+  "reviews": [
+    {
+      "author": "Natalie C.",
+      "rating": 5,
+      "text": "D&D Handwerker did two jobs for us. Both were done efficiently and with professionalism. The first was replacing a missing transom over a door as well as moving a few doors.",
+      "relativeTime": "6 months ago",
+      "source": "google"
+    },
+    {
+      "author": "Tiffany M.",
+      "rating": 5,
+      "text": "It's very clear they're incredibly experienced in various types of jobs and do such thorough work.",
+      "relativeTime": "3 months ago",
+      "source": "google"
+    },
+    {
+      "author": "Natali L.",
+      "rating": 5,
+      "text": "As a daughter of the owner of the construction business, from a very little age, I knew how quality work should look like, and I have a knowledge of how the work should be done.",
+      "relativeTime": "2 years ago",
+      "source": "google"
+    }
+  ]
+}

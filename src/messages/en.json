@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "note": "UI chrome only. Page copy lives in content/.",
+    "locale": "en"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "emergency": "Emergency",
+    "projects": "Projects",
+    "about": "About",
+    "jobs": "Jobs",
+    "contact": "Contact",
+    "guides": "Guides",
+    "reviews": "Reviews",
+    "quote": "Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "breadcrumb": "You are here"
+  },
+  "common": {
+    "callNow": "Call {phone}",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "requestQuote": "Request a quote",
+    "seeAllReviews": "Read all reviews",
+    "learnMore": "Learn more",
+    "viewProject": "View project",
+    "readArticle": "Read article",
+    "viewJob": "View position",
+    "allServices": "All services",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "previous": "Previous",
+    "loading": "Loading …",
+    "readingTime": "{minutes} min read",
+    "from": "from",
+    "perHour": "per hour",
+    "flatRate": "flat rate",
+    "demoBadge": "Example figures — demo",
+    "demoNotice": "Example figures — demo. A client site shows real numbers here; aggregateRating is only emitted from genuinely fetched Google reviews.",
+    "demoImages": "Example images — demo. A client site shows real photographs of the team."
+  },
+  "sections": {
+    "whatWeDo": "What we do",
+    "howItWorks": "How it works",
+    "whatItCosts": "What it costs",
+    "faq": "Frequently asked",
+    "regionalWork": "Work from the region",
+    "serviceArea": "Where we work",
+    "team": "Who turns up at your door",
+    "reviews": "What our customers say",
+    "moreWork": "More work",
+    "keepReading": "Keep reading",
+    "openPositions": "Currently open",
+    "byTheNumbers": "By the numbers",
+    "values": "What you can rely on"
+  },
+  "emergency": {
+    "barMessage": "Emergency? 24h call-out — {phone}",
+    "barMessageShort": "Emergency? 24h — {phone}",
+    "callToAction": "Call now",
+    "availableNow": "Available now",
+    "closedNow": "Outside office hours — emergency line open",
+    "opensAt": "Open again at {time}",
+    "immediateSteps": "What you can do right now"
+  },
+  "serviceArea": {
+    "heading": "Where we work",
+    "mapLabel": "Static map",
+    "mapNote": "A static image instead of a Google Maps embed: an embed loads data to the US before anyone has consented.",
+    "communities": "Municipalities",
+    "radius": "We work in {city} and the municipalities within roughly {km} kilometres. If your address falls outside that, call anyway — we know the businesses in the region and will point you to one."
+  },
+  "quote": {
+    "title": "Request a quote",
+    "stepOf": "Step {current} of {total}",
+    "steps": {
+      "what": "What?",
+      "where": "Where?",
+      "when": "When?",
+      "photos": "Photos",
+      "contact": "Contact"
+    },
+    "escapeHatch": "Prefer to call? {phone}",
+    "fields": {
+      "service": "What is it about?",
+      "postalCode": "Postcode",
+      "city": "Town",
+      "urgency": "How urgent is it?",
+      "photos": "Upload photos (optional)",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Briefly describe the job"
+    },
+    "hints": {
+      "postalCode": "We only need the postcode, to check whether we cover your area.",
+      "phone": "A phone call is fastest. One number is enough.",
+      "photos": "A photo often saves a site visit — and saves you the cost of one. Up to {max} images.",
+      "optional": "Optional"
+    },
+    "urgency": {
+      "emergency": "Emergency — right now",
+      "thisWeek": "This week",
+      "flexible": "I'm flexible"
+    },
+    "submit": "Send request",
+    "submitting": "Sending …",
+    "submittingNote": "Please don't reload. This rarely takes more than a few seconds.",
+    "privacyNote": "Your details are used only to handle this request and are sent straight to our office. We do not store them on this website and do not pass them on.",
+    "privacyLink": "More in the privacy policy.",
+    "success": {
+      "title": "Thank you, we have your request",
+      "body": "You'll hear from us, usually within 24 hours. If it's urgent, call us as well: {phone}"
+    },
+    "outOfArea": {
+      "title": "{postalCode} is outside our service area",
+      "correct": "Correct the postcode"
+    },
+    "error": {
+      "title": "That didn't work",
+      "body": "Your details are still in the form. Try again — or simply call us: {phone}",
+      "retry": "Send again"
+    },
+    "validation": {
+      "summaryTitle": "Please check {count, plural, one {one entry} other {# entries}}",
+      "required": "This field is required.",
+      "phoneRequired": "Please give us a phone number — without one we cannot call you back.",
+      "emailInvalid": "This address looks incomplete. Is something missing after the @?",
+      "postalCodeInvalid": "A Swiss postcode has four digits.",
+      "contactRequired": "Please leave either a phone number or an email address.",
+      "tooManyFiles": "Please attach at most {max} images.",
+      "fileTooLarge": "“{name}” is too large. Please keep images under {max} MB."
+    },
+    "leadSteps": "{count, plural, one {One short step} other {# short steps}}, about two minutes. You'll usually have an answer within 24 hours — on weekdays typically much sooner.",
+    "headings": {
+      "what": "What is it about?",
+      "where": "Where is the job?",
+      "when": "How urgent is it?",
+      "photos": "Upload photos",
+      "contact": "How can we reach you?"
+    }
+  },
+  "contact": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Office hours",
+    "directions": "Getting here",
+    "writeMessage": "Write a message",
+    "sendMessage": "Send message",
+    "outsideHoursTitle": "Outside office hours",
+    "outsideHoursBody": "The emergency line is open around the clock: {phone}. Call it rather than emailing — nobody reads email until morning.",
+    "formLead": "For a quote the form is the best route — you can attach photos, which often saves us a site visit."
+  },
+  "consent": {
+    "title": "We use only what is necessary",
+    "body": "This website works without advertising or tracking cookies. For traffic measurement we use an anonymous, cookieless method. You decide whether we may.",
+    "acceptAll": "Accept all",
+    "settings": "Settings",
+    "rejectAll": "Reject all",
+    "save": "Save choice",
+    "settingsTitle": "Cookie settings",
+    "categories": {
+      "notwendig": {
+        "label": "Necessary",
+        "description": "Needed to run the website — and to remember this choice. Cannot be switched off.",
+        "locked": "Always on"
+      },
+      "funktional": {
+        "label": "Functional",
+        "description": "Extras such as embedded maps or video."
+      },
+      "statistik": {
+        "label": "Statistics",
+        "description": "Anonymous, cookieless traffic measurement. The site works exactly the same if you decline."
+      },
+      "marketing": {
+        "label": "Marketing",
+        "description": "Not in use on this website."
+      }
+    },
+    "noneInCategory": "No services in this category.",
+    "processorTable": {
+      "service": "Service",
+      "purpose": "Purpose",
+      "country": "Location",
+      "policy": "Privacy policy"
+    },
+    "savedTitle": "Saved",
+    "savedRejectedBody": "We've recorded your refusal. This website now makes no third-party requests.",
+    "reopen": "Cookie settings",
+    "recordNote": "We record the time, the version of this policy and your choice — locally in your browser. This record is not sent to a server."
+  },
+  "trust": {
+    "meisterbetrieb": "Master craftsman business",
+    "lehrbetrieb": "Training company",
+    "memberOf": "Member of {association}",
+    "sinceYear": "Since {year}",
+    "insured": "Liability cover up to {amount}",
+    "freeQuote": "Free quote",
+    "fixedPrice": "Fixed price before work starts"
+  },
+  "empty": {
+    "noReviews": {
+      "title": "No reviews yet",
+      "body": "We've only recently appeared on Google. Were you a customer? A short note helps the next person decide."
+    },
+    "noProjects": {
+      "title": "The gallery is being built",
+      "body": "We've only recently started photographing our sites systematically. Call us — we'll gladly show you comparable work."
+    },
+    "noJobs": {
+      "title": "No positions advertised right now",
+      "body": "We hire when the right person turns up, not only when a position is open. Drop us a line."
+    },
+    "spontaneous": "Apply speculatively"
+  },
+  "errors": {
+    "notFoundTitle": "This page doesn't exist (any more)",
+    "notFoundBody": "We may have renamed it. If it's urgent, just call — we'll work out what you need faster on the phone.",
+    "notFoundLinks": "Popular pages",
+    "serverErrorTitle": "Something went wrong on our side",
+    "serverErrorBody": "Not on yours. Try again in a few minutes — or call, that always works: {phone}",
+    "backHome": "Back to the homepage",
+    "tryAgain": "Try again"
+  },
+  "footer": {
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "imprint": "Legal notice",
+    "privacy": "Privacy policy",
+    "cookieSettings": "Cookie settings",
+    "jobsAndApprenticeships": "Jobs & apprenticeships"
+  },
+  "gallery": {
+    "open": "Enlarge image",
+    "counter": "{current} of {total}",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "sliderLabel": "Comparison between before and after"
+  },
+  "demo": {
+    "barText": "Unofficial preview — not this business's live website. Not indexed in search engines.",
+    "barCta": "Learn more"
+  },
+  "associations": {
+    "suissetec": "suissetec",
+    "eit-swiss": "EIT.swiss",
+    "jardinsuisse": "JardinSuisse",
+    "smgv": "SMGV",
+    "gebaeudehuelle-schweiz": "Gebäudehülle Schweiz"
+  }
+}

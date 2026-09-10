@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "note": "UI-Chrome only. Page copy lives in content/ — if a string here mentions a specific service, town or price, it is in the wrong file.",
+    "locale": "de-CH"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "emergency": "Notdienst",
+    "projects": "Referenzen",
+    "about": "Über uns",
+    "jobs": "Jobs",
+    "contact": "Kontakt",
+    "guides": "Ratgeber",
+    "reviews": "Bewertungen",
+    "quote": "Offerte",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schliessen",
+    "skipToContent": "Zum Inhalt springen",
+    "mainNavigation": "Hauptnavigation",
+    "breadcrumb": "Sie sind hier"
+  },
+  "common": {
+    "callNow": "{phone} anrufen",
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp",
+    "requestQuote": "Offerte anfordern",
+    "seeAllReviews": "Alle Bewertungen lesen",
+    "learnMore": "Mehr erfahren",
+    "viewProject": "Projekt ansehen",
+    "readArticle": "Beitrag lesen",
+    "viewJob": "Stelle ansehen",
+    "allServices": "Alle Leistungen ansehen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "close": "Schliessen",
+    "previous": "Vorherige",
+    "loading": "Wird geladen …",
+    "readingTime": "{minutes} Min. Lesezeit",
+    "from": "ab",
+    "perHour": "pro Stunde",
+    "flatRate": "pauschal",
+    "demoBadge": "Beispielwerte — Demo",
+    "demoNotice": "Beispielwerte — Demo. Auf einer Kundenwebsite stehen hier echte Zahlen; aggregateRating wird nur aus tatsächlich abgerufenen Google-Bewertungen ausgegeben.",
+    "demoImages": "Beispielbilder — Demo. Auf einer Kundenwebsite stehen hier echte Porträts der Mitarbeitenden."
+  },
+  "sections": {
+    "whatWeDo": "Das machen wir",
+    "howItWorks": "So läuft es ab",
+    "whatItCosts": "Was es kostet",
+    "faq": "Häufige Fragen",
+    "regionalWork": "Arbeiten aus der Region",
+    "serviceArea": "Wo wir fahren",
+    "team": "Wer bei Ihnen klingelt",
+    "reviews": "Was unsere Kundschaft sagt",
+    "moreWork": "Weitere Arbeiten",
+    "keepReading": "Weiterlesen",
+    "openPositions": "Aktuell offen",
+    "byTheNumbers": "Zahlen",
+    "values": "Darauf können Sie sich verlassen"
+  },
+  "emergency": {
+    "barMessage": "Notfall? Pikettdienst 24 h — {phone}",
+    "barMessageShort": "Notfall? Pikett 24 h — {phone}",
+    "callToAction": "Jetzt anrufen",
+    "availableNow": "Jetzt erreichbar",
+    "closedNow": "Ausserhalb der Bürozeiten — Pikettdienst erreichbar",
+    "opensAt": "Wieder erreichbar ab {time}",
+    "immediateSteps": "Das können Sie sofort tun"
+  },
+  "serviceArea": {
+    "heading": "Wo wir fahren",
+    "mapLabel": "Statische Karte",
+    "mapNote": "Statisches Bild statt Google-Maps-Einbettung: ein Embed lädt Daten in die USA, bevor jemand eingewilligt hat.",
+    "communities": "Gemeinden",
+    "radius": "Wir arbeiten in {city} und den Gemeinden im Umkreis von rund {km} Kilometern. Liegt Ihre Adresse ausserhalb, rufen Sie trotzdem an — wir kennen die Betriebe in der Region und vermitteln Sie weiter."
+  },
+  "quote": {
+    "title": "Offerte anfordern",
+    "stepOf": "Schritt {current} von {total}",
+    "steps": {
+      "what": "Was?",
+      "where": "Wo?",
+      "when": "Wann?",
+      "photos": "Fotos",
+      "contact": "Kontakt"
+    },
+    "escapeHatch": "Lieber telefonisch? {phone}",
+    "fields": {
+      "service": "Worum geht es?",
+      "postalCode": "Postleitzahl",
+      "city": "Ort",
+      "urgency": "Wie dringend ist es?",
+      "photos": "Fotos hochladen (freiwillig)",
+      "name": "Name",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "message": "Beschreiben Sie kurz, worum es geht"
+    },
+    "hints": {
+      "postalCode": "Wir brauchen nur die Postleitzahl, um zu prüfen, ob wir bei Ihnen fahren.",
+      "phone": "Am schnellsten geht es telefonisch. Eine Nummer genügt uns.",
+      "photos": "Ein Foto spart uns oft die Besichtigung — und Ihnen die Kosten dafür. Bis zu {max} Bilder.",
+      "optional": "Freiwillig"
+    },
+    "urgency": {
+      "emergency": "Notfall — sofort",
+      "thisWeek": "Diese Woche",
+      "flexible": "Ich bin zeitlich flexibel"
+    },
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet …",
+    "submittingNote": "Bitte nicht neu laden. Das dauert selten länger als ein paar Sekunden.",
+    "privacyNote": "Ihre Angaben werden ausschliesslich zur Bearbeitung dieser Anfrage verwendet und direkt an unser Büro gesendet. Wir speichern sie nicht auf dieser Website und geben sie nicht weiter.",
+    "privacyLink": "Mehr dazu in der Datenschutzerklärung.",
+    "success": {
+      "title": "Danke, wir haben Ihre Anfrage erhalten",
+      "body": "Sie hören von uns, in der Regel innert 24 Stunden. Ist es dringend, rufen Sie zusätzlich an: {phone}"
+    },
+    "outOfArea": {
+      "title": "{postalCode} liegt ausserhalb unseres Einsatzgebiets",
+      "correct": "Postleitzahl korrigieren"
+    },
+    "error": {
+      "title": "Das hat leider nicht geklappt",
+      "body": "Ihre Angaben sind noch im Formular. Versuchen Sie es nochmals — oder rufen Sie uns einfach an: {phone}",
+      "retry": "Nochmals senden"
+    },
+    "validation": {
+      "summaryTitle": "Bitte prüfen Sie {count, plural, one {eine Angabe} other {# Angaben}}",
+      "required": "Dieses Feld wird benötigt.",
+      "phoneRequired": "Bitte geben Sie eine Telefonnummer an — ohne sie können wir nicht zurückrufen.",
+      "emailInvalid": "Diese Adresse ist unvollständig. Fehlt etwas nach dem @?",
+      "postalCodeInvalid": "Eine Schweizer Postleitzahl hat vier Ziffern.",
+      "contactRequired": "Bitte hinterlassen Sie eine Telefonnummer oder eine E-Mail-Adresse.",
+      "tooManyFiles": "Bitte höchstens {max} Bilder.",
+      "fileTooLarge": "«{name}» ist zu gross. Bitte höchstens {max} MB pro Bild."
+    },
+    "leadSteps": "{count, plural, one {Ein kurzer Schritt} other {# kurze Schritte}}, rund zwei Minuten. Sie erhalten in der Regel innert 24 Stunden eine Antwort — an Werktagen meist deutlich schneller.",
+    "headings": {
+      "what": "Worum geht es?",
+      "where": "Wo ist der Einsatzort?",
+      "when": "Wie dringend ist es?",
+      "photos": "Fotos hochladen",
+      "contact": "Wie erreichen wir Sie?"
+    }
+  },
+  "contact": {
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Bürozeiten",
+    "directions": "Anfahrt",
+    "writeMessage": "Nachricht schreiben",
+    "sendMessage": "Nachricht senden",
+    "outsideHoursTitle": "Ausserhalb der Bürozeiten",
+    "outsideHoursBody": "Der Pikettdienst ist rund um die Uhr erreichbar: {phone}. Rufen Sie dort an, statt eine E-Mail zu schreiben — die liest bis morgen niemand.",
+    "formLead": "Für eine Offerte nutzen Sie am besten das Formular — dort können Sie Fotos mitschicken, was uns oft die Besichtigung erspart."
+  },
+  "consent": {
+    "title": "Wir verwenden nur das Nötigste",
+    "body": "Diese Website funktioniert ohne Werbe- oder Tracking-Cookies. Für die Reichweitenmessung nutzen wir ein anonymes, cookiefreies Verfahren. Sie entscheiden, ob wir das dürfen.",
+    "acceptAll": "Alle akzeptieren",
+    "settings": "Einstellungen",
+    "rejectAll": "Alle ablehnen",
+    "save": "Auswahl speichern",
+    "settingsTitle": "Cookie-Einstellungen",
+    "categories": {
+      "notwendig": {
+        "label": "Notwendig",
+        "description": "Wird für den Betrieb der Website gebraucht — und um diese Entscheidung selbst zu speichern. Lässt sich nicht abschalten.",
+        "locked": "Immer aktiv"
+      },
+      "funktional": {
+        "label": "Funktional",
+        "description": "Zusatzfunktionen wie eingebettete Karten oder Videos."
+      },
+      "statistik": {
+        "label": "Statistik",
+        "description": "Anonyme Reichweitenmessung ohne Cookies. Die Website funktioniert unverändert, wenn Sie ablehnen."
+      },
+      "marketing": {
+        "label": "Marketing",
+        "description": "Auf dieser Website nicht im Einsatz."
+      }
+    },
+    "noneInCategory": "Keine Dienste in dieser Kategorie.",
+    "processorTable": {
+      "service": "Dienst",
+      "purpose": "Zweck",
+      "country": "Standort",
+      "policy": "Datenschutzerklärung"
+    },
+    "savedTitle": "Gespeichert",
+    "savedRejectedBody": "Wir haben Ihre Ablehnung vermerkt. Diese Website stellt jetzt keine Anfragen an Dritte.",
+    "reopen": "Cookie-Einstellungen",
+    "recordNote": "Protokolliert werden Zeitpunkt, Version dieser Erklärung und Ihre Auswahl — lokal in Ihrem Browser. Wir übermitteln diesen Nachweis nicht an einen Server."
+  },
+  "trust": {
+    "meisterbetrieb": "Meisterbetrieb",
+    "lehrbetrieb": "Lehrbetrieb",
+    "memberOf": "Mitglied {association}",
+    "sinceYear": "Seit {year}",
+    "insured": "Haftpflicht bis {amount}",
+    "freeQuote": "Kostenlose Offerte",
+    "fixedPrice": "Festpreis vor Arbeitsbeginn"
+  },
+  "empty": {
+    "noReviews": {
+      "title": "Noch keine Bewertungen",
+      "body": "Wir sind erst seit Kurzem auf Google zu finden. Waren Sie bei uns Kundschaft? Eine kurze Rückmeldung hilft den Nächsten bei der Entscheidung."
+    },
+    "noProjects": {
+      "title": "Die Bildergalerie entsteht gerade",
+      "body": "Wir fotografieren unsere Baustellen erst seit Kurzem systematisch. Rufen Sie an — wir zeigen Ihnen gerne vergleichbare Arbeiten."
+    },
+    "noJobs": {
+      "title": "Zurzeit ist keine Stelle ausgeschrieben",
+      "body": "Wir stellen ein, wenn die richtige Person kommt — nicht nur, wenn eine Stelle offen ist. Schicken Sie uns eine Zeile."
+    },
+    "spontaneous": "Spontan bewerben"
+  },
+  "errors": {
+    "notFoundTitle": "Diese Seite gibt es nicht (mehr)",
+    "notFoundBody": "Vielleicht haben wir sie umbenannt. Wenn es dringend ist, rufen Sie einfach an — am Telefon finden wir schneller heraus, worum es geht.",
+    "notFoundLinks": "Beliebte Seiten",
+    "serverErrorTitle": "Da ist bei uns etwas schiefgelaufen",
+    "serverErrorBody": "Nicht bei Ihnen. Versuchen Sie es in ein paar Minuten nochmals — oder rufen Sie an, das geht immer: {phone}",
+    "backHome": "Zur Startseite",
+    "tryAgain": "Nochmals versuchen"
+  },
+  "footer": {
+    "services": "Leistungen",
+    "company": "Betrieb",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutzerklärung",
+    "cookieSettings": "Cookie-Einstellungen",
+    "jobsAndApprenticeships": "Jobs & Lehrstellen"
+  },
+  "gallery": {
+    "open": "Bild vergrössern",
+    "counter": "{current} von {total}",
+    "beforeLabel": "Vorher",
+    "afterLabel": "Nachher",
+    "sliderLabel": "Vergleich zwischen vorher und nachher"
+  },
+  "demo": {
+    "barText": "Unverbindliche Vorschau — nicht die offizielle Website dieses Betriebs. Nicht in Suchmaschinen indexiert.",
+    "barCta": "Mehr erfahren"
+  },
+  "associations": {
+    "suissetec": "suissetec",
+    "eit-swiss": "EIT.swiss",
+    "jardinsuisse": "JardinSuisse",
+    "smgv": "SMGV",
+    "gebaeudehuelle-schweiz": "Gebäudehülle Schweiz"
+  }
+}

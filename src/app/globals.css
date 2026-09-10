@@ -1,0 +1,138 @@
+@import 'tailwindcss';
+@import '../../config/theme.css';
+
+/*
+  The bridge between the Figma token export and Tailwind.
+
+  `@theme inline` matters: it makes the generated utilities reference `var(--color-…)`
+  rather than copying the resolved value. That is the whole reason a vertical reskin is
+  one import swap in config/theme.css and not a rebuild of every component class.
+
+  Names are chosen so the utility reads correctly at the call site. `bg-brand` is the
+  brand FILL; `text-ink-brand` is the accessible brand TEXT colour, which is a different,
+  darker value. Collapsing them into one `--color-brand` would generate a `text-brand`
+  that fails contrast in every theme — the exact bug the token layer exists to prevent.
+*/
+@theme inline {
+  /* surfaces */
+  --color-page: var(--color-bg-page);
+  --color-subtle: var(--color-bg-subtle);
+  --color-inverse: var(--color-bg-inverse);
+  --color-surface: var(--color-surface-default);
+  --color-sunken: var(--color-surface-sunken);
+  --color-brand: var(--color-bg-brand);
+  --color-brand-soft: var(--color-bg-brand-subtle);
+  --color-emergency: var(--color-bg-emergency);
+
+  /* text */
+  --color-ink: var(--color-text-primary);
+  --color-ink-soft: var(--color-text-secondary);
+  --color-ink-muted: var(--color-text-muted);
+  --color-ink-invert: var(--color-text-inverse);
+  --color-ink-brand: var(--color-text-brand);
+  --color-ink-link: var(--color-text-link);
+  --color-on-brand: var(--color-text-on-brand);
+
+  /* lines */
+  --color-line: var(--color-border-default);
+  --color-line-strong: var(--color-border-strong);
+  --color-line-control: var(--color-border-control);
+  --color-line-brand: var(--color-border-brand);
+  --color-line-focus: var(--color-border-focus);
+
+  /* calls to action */
+  --color-cta: var(--color-cta-bg);
+  --color-cta-hover: var(--color-cta-bg-hover);
+  --color-on-cta: var(--color-cta-fg);
+  --color-sos: var(--color-cta-emergency-bg);
+  --color-sos-hover: var(--color-cta-emergency-bg-hover);
+  --color-on-sos: var(--color-cta-emergency-fg);
+
+  /* icons */
+  --color-icon: var(--color-icon-default);
+  --color-icon-accent: var(--color-icon-brand);
+  --color-icon-invert: var(--color-icon-inverse);
+  --color-icon-onbrand: var(--color-icon-on-brand);
+
+  /* status */
+  --color-danger: var(--color-status-danger-fg);
+  --color-danger-soft: var(--color-status-danger-bg);
+  --color-success: var(--color-status-success-fg);
+  --color-success-soft: var(--color-status-success-bg);
+  --color-warning: var(--color-status-warning-fg);
+  --color-warning-soft: var(--color-status-warning-bg);
+  --color-info: var(--color-status-info-fg);
+  --color-info-soft: var(--color-status-info-bg);
+
+  --color-ring: var(--color-focus-ring);
+  --color-scrim: var(--color-overlay-scrim);
+
+  /* type scale — 17px base */
+  --text-xs: var(--hw-text-xs);
+  --text-sm: var(--hw-text-sm);
+  --text-base: var(--hw-text-base);
+  --text-lg: var(--hw-text-lg);
+  --text-xl: var(--hw-text-xl);
+  --text-2xl: var(--hw-text-2xl);
+  --text-3xl: var(--hw-text-3xl);
+  --text-4xl: var(--hw-text-4xl);
+  --text-5xl: var(--hw-text-5xl);
+
+  --font-display: var(--hw-font-display);
+  --font-body: var(--hw-font-body);
+
+  /* semantic radii — named by what they wrap, not by size */
+  --radius-chip: var(--hw-radius-sm);
+  --radius-control: var(--hw-radius-md);
+  --radius-card: var(--hw-radius-lg);
+  --radius-panel: var(--hw-radius-xl);
+  --radius-pill: var(--hw-radius-full);
+
+  --shadow-card: var(--hw-shadow-card);
+  --shadow-raised: var(--hw-shadow-raised);
+  --shadow-sticky: var(--hw-shadow-sticky);
+
+  --container-prose: var(--hw-container-prose);
+  --container-site: var(--hw-container-max);
+}
+
+@layer base {
+  html {
+    font-family: var(--hw-font-body);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+    font-size: var(--hw-text-base);
+    line-height: var(--hw-leading-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--hw-font-display);
+    line-height: var(--hw-leading-heading);
+    text-wrap: balance;
+  }
+  p, li { text-wrap: pretty; }
+
+  /* Tap targets: 48px, above the WCAG 2.2 floor of 24px. The customer base skews 45-75
+     and often has one hand full. */
+  a[href^='tel:'], button, [role='button'] { min-height: var(--hw-touch-min); }
+
+  /* A link that only differs from body text by colour fails for colour-blind readers
+     when it sits inside a paragraph. Inside prose, underline it. */
+  .prose a { text-decoration: underline; text-underline-offset: 0.2em; }
+}
+
+@utility container-site {
+  width: 100%;
+  max-width: var(--hw-container-max);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  @media (width >= 64rem) { padding-inline: 2rem; }
+}
+
+@utility container-prose {
+  width: 100%;
+  max-width: var(--hw-container-prose);
+  margin-inline: auto;
+}

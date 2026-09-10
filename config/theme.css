@@ -1,0 +1,9 @@
+/* CLIENT-OWNED. This file, site.config.ts and content/ are the entire delivery surface.
+   Nothing in src/ was edited for this build. */
+
+@import './tokens.base.css';
+@import './verticals/maler.css';
+
+/* No client overrides. The maler preset was built for this job and clears the contrast
+   audit as shipped (npm run check:contrast). If D&D have brand colours of their own,
+   they go below — and the audit gets re-run before anything is deployed. */

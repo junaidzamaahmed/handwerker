@@ -1,0 +1,67 @@
+/* Template-owned. Generated from Figma file UK0KdruELZEFxDn2vZJ73K.
+   Do NOT edit per client — client overrides belong in config/theme.css.
+
+   Scalars are prefixed `--hw-` on purpose. Tailwind v4 owns the bare `--spacing-*`,
+   `--radius-*`, `--text-*` and `--font-*` namespaces; a token with the same name would
+   silently fight the framework depending on stylesheet order. src/app/globals.css maps
+   these into Tailwind's namespaces in one place. */
+
+:root {
+  /* Spacing — 4px base, so it lines up 1:1 with Tailwind's numeric scale (p-4 = 16px). */
+  --hw-space-xs: 4px;   --hw-space-sm: 8px;   --hw-space-md: 12px;
+  --hw-space-lg: 16px;  --hw-space-xl: 24px;  --hw-space-2xl: 32px;
+  --hw-space-3xl: 48px; --hw-space-4xl: 64px; --hw-space-5xl: 96px;
+  --hw-space-6xl: 128px;
+
+  /* Sizing — 48px targets, not the 24px WCAG floor. Older users, work gloves. */
+  --hw-touch-min: 48px;
+  --hw-icon-sm: 16px; --hw-icon-md: 20px;
+  --hw-icon-lg: 24px; --hw-icon-xl: 32px;
+  --hw-container-max: 1200px;
+  --hw-container-prose: 680px;
+  --hw-callbar-height: 64px;
+
+  /* Radius */
+  --hw-radius-none: 0px; --hw-radius-sm: 4px;  --hw-radius-md: 8px;
+  --hw-radius-lg: 12px;  --hw-radius-xl: 20px; --hw-radius-full: 9999px;
+
+  /* Type. Self-hosted — never the Google Fonts CDN (revDSG transfer disclosure).
+     next/font downloads at build time and emits the files from our own origin, so
+     there is no runtime request to a Google host. */
+  --hw-font-display: 'Archivo', system-ui, sans-serif;
+  --hw-font-body: 'Inter', system-ui, sans-serif;
+
+  /* Base is 17px, not 16px. Trade customers skew 45-75. */
+  --hw-text-xs: 13px;  --hw-text-sm: 15px;  --hw-text-base: 17px; --hw-text-lg: 19px;
+  --hw-text-xl: 22px;  --hw-text-2xl: 26px; --hw-text-3xl: 32px;  --hw-text-4xl: 40px;
+  --hw-text-5xl: 52px;
+
+  --hw-leading-display: 1.08;
+  --hw-leading-heading: 1.2;
+  --hw-leading-body: 1.6;
+
+  --hw-shadow-card: 0 1px 2px rgb(0 0 0 / 0.06), 0 1px 3px rgb(0 0 0 / 0.10);
+  --hw-shadow-raised: 0 4px 6px -1px rgb(0 0 0 / 0.10), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --hw-shadow-sticky: 0 -2px 8px rgb(0 0 0 / 0.12);
+}
+
+/* The focus ring is drawn OUTSIDE the element. Measured directly on a CTA fill it only
+   reaches 1.5:1; offset onto the page background it clears 3:1 in all three themes.
+   This is geometry, not colour — do not "simplify" it to an inset ring. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-focus-ring-offset);
+}
+
+/* German compounds are long — Sicherheitsnachweis, Liegenschaftsverwaltung. */
+:root { hyphens: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
