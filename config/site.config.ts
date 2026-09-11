@@ -16,7 +16,7 @@ import type { SiteConfig } from './site.config.types';
  *    the only thing on this site that is not already true, and the demo bar says so.
  */
 export const siteConfig: SiteConfig = {
-  siteUrl: 'https://dd-handwerker-demo.vercel.app',
+  siteUrl: 'https://handwerker-xi.vercel.app',
   demoMode: true,
   theme: 'maler',
   themeColor: '#ffffff',
