@@ -26,5 +26,8 @@ are not stock, not generated, and not portraits of staff invented for the site.
 | `referenzen/ref-montage-wandlampe.jpg` | Finished wall lamp over a headboard |
 | `referenzen/ref-deckenlampe.jpg` | Ceiling pendant after fitting |
 | `svc-*.jpg` | Crops of the same listing photos, used on service pages |
+| `ratgeber/art-*.jpg` | Crops of the same listing photos. Currently unreferenced — `features.blog` is off, so no Ratgeber page ships. |
 
 No Pexels or other stock is used on this build.
+
+Re-verified against the live profile on 2026-09-11: same listing, same photo set.

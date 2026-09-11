@@ -3,13 +3,19 @@
   "fetchedAt": "2026-09-10",
   "rating": 4.9,
   "total": 46,
-  "distribution": { "5": 45, "4": 0, "3": 0, "2": 0, "1": 1 },
+  "distribution": {
+    "5": 45,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 1
+  },
   "reviews": [
     {
       "author": "Natalie C.",
       "rating": 5,
       "text": "D&D Handwerker did two jobs for us. Both were done efficiently and with professionalism. The first was replacing a missing transom over a door as well as moving a few doors.",
-      "relativeTime": "6 months ago",
+      "relativeTime": "7 months ago",
       "source": "google"
     },
     {
@@ -26,5 +32,6 @@
       "relativeTime": "2 years ago",
       "source": "google"
     }
-  ]
+  ],
+  "_verifiedAt": "2026-09-11"
 }
