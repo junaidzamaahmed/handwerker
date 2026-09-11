@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/lib/i18n/routing';
-import { siteConfig, whatsappHref } from '@/lib/config';
+import { siteConfig, whatsappHref, formatRating } from '@/lib/config';
 import { getHome } from '@/lib/content/pages';
 import { getServices } from '@/lib/content/services';
 import { getProjects } from '@/lib/content/projects';
@@ -50,7 +50,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {home.hero.eyebrow}
             </p>
           )}
-          <h1 className="mt-3 text-4xl font-bold text-ink lg:text-5xl">{home.hero.h1}</h1>
+          <h1 className="mt-3 text-3xl font-bold text-ink sm:text-4xl lg:text-5xl">{home.hero.h1}</h1>
           <p className="mt-5 max-w-xl text-lg text-ink-soft">{home.hero.lead}</p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href={`tel:${contact.phone}`} icon="phone">
@@ -156,7 +156,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHead
               title={ts('reviews')}
-              lead={`${reviews.rating.toFixed(1)} / 5 · ${reviews.total}`}
+              lead={t('ratingSummary', {
+                rating: formatRating(reviews.rating, t('decimalSeparator')),
+                total: reviews.total,
+              })}
             />
             <Link href="/bewertungen" className="inline-flex items-center gap-1 font-semibold text-ink-link">
               {t('seeAllReviews')}

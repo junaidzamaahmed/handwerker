@@ -18,7 +18,8 @@
     "closeMenu": "Menü schliessen",
     "skipToContent": "Zum Inhalt springen",
     "mainNavigation": "Hauptnavigation",
-    "breadcrumb": "Sie sind hier"
+    "breadcrumb": "Sie sind hier",
+    "language": "Sprache / Language"
   },
   "common": {
     "callNow": "{phone} anrufen",
@@ -42,7 +43,9 @@
     "flatRate": "pauschal",
     "demoBadge": "Beispielwerte — Demo",
     "demoNotice": "Beispielwerte — Demo. Auf einer Kundenwebsite stehen hier echte Zahlen; aggregateRating wird nur aus tatsächlich abgerufenen Google-Bewertungen ausgegeben.",
-    "demoImages": "Beispielbilder — Demo. Auf einer Kundenwebsite stehen hier echte Porträts der Mitarbeitenden."
+    "demoImages": "Beispielbilder — Demo. Auf einer Kundenwebsite stehen hier echte Porträts der Mitarbeitenden.",
+    "ratingSummary": "{rating} von 5 aus {total} Google-Bewertungen",
+    "decimalSeparator": ","
   },
   "sections": {
     "whatWeDo": "Das machen wir",
@@ -64,16 +67,16 @@
     "barMessageShort": "Notfall? Pikett 24 h — {phone}",
     "callToAction": "Jetzt anrufen",
     "availableNow": "Jetzt erreichbar",
-    "closedNow": "Ausserhalb der Bürozeiten — Pikettdienst erreichbar",
+    "closedNow": "Ausserhalb der Arbeitszeiten",
     "opensAt": "Wieder erreichbar ab {time}",
     "immediateSteps": "Das können Sie sofort tun"
   },
   "serviceArea": {
     "heading": "Wo wir fahren",
-    "mapLabel": "Statische Karte",
-    "mapNote": "Statisches Bild statt Google-Maps-Einbettung: ein Embed lädt Daten in die USA, bevor jemand eingewilligt hat.",
+    "mapNote": "Statt einer Google-Maps-Karte: Ein Karten-Embed überträgt Ihre IP-Adresse in die USA, bevor Sie zugestimmt haben. Diese Seite lädt nichts von Dritten.",
     "communities": "Gemeinden",
-    "radius": "Wir arbeiten in {city} und den Gemeinden im Umkreis von rund {km} Kilometern. Liegt Ihre Adresse ausserhalb, rufen Sie trotzdem an — wir kennen die Betriebe in der Region und vermitteln Sie weiter."
+    "radius": "Wir arbeiten in {city} und den Gemeinden im Umkreis von rund {km} Kilometern. Liegt Ihre Adresse ausserhalb, rufen Sie trotzdem an — wir kennen die Betriebe in der Region und vermitteln Sie weiter.",
+    "diagramLabel": "Einsatzgebiet: {city} und Umgebung im Umkreis von rund {km} Kilometern"
   },
   "quote": {
     "title": "Offerte anfordern",
@@ -149,11 +152,11 @@
     "address": "Adresse",
     "phone": "Telefon",
     "email": "E-Mail",
-    "hours": "Bürozeiten",
+    "hours": "Erreichbar",
     "directions": "Anfahrt",
     "writeMessage": "Nachricht schreiben",
     "sendMessage": "Nachricht senden",
-    "outsideHoursTitle": "Ausserhalb der Bürozeiten",
+    "outsideHoursTitle": "Ausserhalb der Arbeitszeiten",
     "outsideHoursBody": "Der Pikettdienst ist rund um die Uhr erreichbar: {phone}. Rufen Sie dort an, statt eine E-Mail zu schreiben — die liest bis morgen niemand.",
     "formLead": "Für eine Offerte nutzen Sie am besten das Formular — dort können Sie Fotos mitschicken, was uns oft die Besichtigung erspart."
   },

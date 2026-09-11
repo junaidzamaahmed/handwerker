@@ -18,7 +18,8 @@
     "closeMenu": "Close menu",
     "skipToContent": "Skip to content",
     "mainNavigation": "Main navigation",
-    "breadcrumb": "You are here"
+    "breadcrumb": "You are here",
+    "language": "Language / Sprache"
   },
   "common": {
     "callNow": "Call {phone}",
@@ -42,7 +43,9 @@
     "flatRate": "flat rate",
     "demoBadge": "Example figures — demo",
     "demoNotice": "Example figures — demo. A client site shows real numbers here; aggregateRating is only emitted from genuinely fetched Google reviews.",
-    "demoImages": "Example images — demo. A client site shows real photographs of the team."
+    "demoImages": "Example images — demo. A client site shows real photographs of the team.",
+    "ratingSummary": "{rating} out of 5 from {total} Google reviews",
+    "decimalSeparator": "."
   },
   "sections": {
     "whatWeDo": "What we do",
@@ -64,16 +67,16 @@
     "barMessageShort": "Emergency? 24h — {phone}",
     "callToAction": "Call now",
     "availableNow": "Available now",
-    "closedNow": "Outside office hours — emergency line open",
+    "closedNow": "Outside working hours",
     "opensAt": "Open again at {time}",
     "immediateSteps": "What you can do right now"
   },
   "serviceArea": {
     "heading": "Where we work",
-    "mapLabel": "Static map",
-    "mapNote": "A static image instead of a Google Maps embed: an embed loads data to the US before anyone has consented.",
+    "mapNote": "Instead of a Google Maps embed: a map embed sends your IP address to the US before you have agreed to anything. This page loads nothing from third parties.",
     "communities": "Municipalities",
-    "radius": "We work in {city} and the municipalities within roughly {km} kilometres. If your address falls outside that, call anyway — we know the businesses in the region and will point you to one."
+    "radius": "We work in {city} and the municipalities within roughly {km} kilometres. If your address falls outside that, call anyway — we know the businesses in the region and will point you to one.",
+    "diagramLabel": "Service area: {city} and the surrounding municipalities within roughly {km} kilometres"
   },
   "quote": {
     "title": "Request a quote",
@@ -149,11 +152,11 @@
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
-    "hours": "Office hours",
+    "hours": "Reachable",
     "directions": "Getting here",
     "writeMessage": "Write a message",
     "sendMessage": "Send message",
-    "outsideHoursTitle": "Outside office hours",
+    "outsideHoursTitle": "Outside working hours",
     "outsideHoursBody": "The emergency line is open around the clock: {phone}. Call it rather than emailing — nobody reads email until morning.",
     "formLead": "For a quote the form is the best route — you can attach photos, which often saves us a site visit."
   },
