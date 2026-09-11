@@ -11,9 +11,16 @@ resold.
 | **No ß, ever** | Straße, Größe, außerhalb | Strasse, Grösse, ausserhalb |
 | Thousands separator | 1.250 / 1,250 | 1'250 |
 | Currency | 1250 € / EUR | CHF 1'250.00 |
+| Decimal, non-currency | 4.9 von 5 | 4,9 von 5 |
 | Date | 2026-09-09 in prose | 09.09.2026 |
 | Phone, domestic | +41 52 123 45 67 in body text | 052 123 45 67 |
 | Phone, `tel:` href | 052 123 45 67 | +41521234567 |
+
+Note the split between the two decimal rows: Swiss **currency** takes a point, Swiss
+**prose** takes a comma. `Intl.NumberFormat('de-CH')` only knows the currency
+convention and will render a rating as `4.9`, so ratings are formatted from
+`common.decimalSeparator` in the message catalogue instead — see `formatRating` in
+`src/lib/config.ts`.
 
 ## Vocabulary — Swiss over standard German
 

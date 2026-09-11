@@ -37,3 +37,19 @@ export function whatsappHref(): string | null {
 export function gemeindeForPostalCode(plz: string) {
   return siteConfig.serviceArea.gemeinden.find((g) => g.plz.includes(plz));
 }
+
+/**
+ * Ratings as the page locale writes them.
+ *
+ * `toFixed(1)` alone hard-codes an English decimal point into a German page. But
+ * `Intl.NumberFormat('de-CH')` is not the answer either: CLDR gives de-CH a decimal POINT
+ * (it is the currency convention — CHF 1'250.00), while Swiss prose writes a rating as
+ * *4,9*, which is what `content/` says in every sentence around this number. Rendering
+ * 4.9 in the stat box beside a sentence reading 4,9 is the visible bug.
+ *
+ * So the separator is a translated value like every other locale-specific string on the
+ * site, rather than something inferred from a tag that answers a different question.
+ */
+export function formatRating(value: number, decimalSeparator: string): string {
+  return value.toFixed(1).replace('.', decimalSeparator);
+}

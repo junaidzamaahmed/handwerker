@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/lib/i18n/routing';
-import { siteConfig } from '@/lib/config';
+import { siteConfig, formatRating } from '@/lib/config';
 import { getIndexCopy } from '@/lib/content/pages';
 import { getReviewData } from '@/lib/content/reviews';
 import { Section } from '@/components/blocks/Section';
@@ -27,6 +27,7 @@ export default async function ReviewsPage({ params }: { params: Promise<{ locale
   if (!siteConfig.features.reviews) notFound();
   const copy = await getIndexCopy(locale, 'bewertungen');
   if (!copy) notFound();
+  const t = await getTranslations('common');
   const data = getReviewData();
 
   return (
@@ -38,11 +39,19 @@ export default async function ReviewsPage({ params }: { params: Promise<{ locale
         {data && (
           <div className="mt-8 flex flex-wrap items-center gap-8 rounded-card border border-line bg-surface p-6">
             <div className="text-center">
-              <p className="font-display text-5xl font-bold text-ink">{data.rating.toFixed(1)}</p>
-              <div className="mt-1 flex justify-center gap-0.5" aria-label={`${data.rating} / 5`}>
-                {Array.from({ length: 5 }, (_, i) => (
-                  <Icon key={i} name="star" size={16} className={i < Math.round(data.rating) ? 'text-warning' : 'text-line-strong'} />
-                ))}
+              <p className="font-display text-5xl font-bold text-ink">{formatRating(data.rating, t('decimalSeparator'))}</p>
+              <div className="mt-1 flex justify-center gap-0.5" aria-label={`${formatRating(data.rating, t('decimalSeparator'))} / 5`}>
+                {Array.from({ length: 5 }, (_, i) => {
+                  const earned = i < Math.round(data.rating);
+                  return (
+                    <Icon
+                      key={i}
+                      name={earned ? 'star-filled' : 'star'}
+                      size={16}
+                      className={earned ? 'text-warning' : 'text-line-strong'}
+                    />
+                  );
+                })}
               </div>
             </div>
             <ul className="min-w-56 flex-1 space-y-1.5">
