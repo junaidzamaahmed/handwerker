@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/lib/i18n/navigation';
-import { siteConfig, localised } from '@/lib/config';
-import { primaryNav } from '@/lib/nav';
+import { siteConfig, localised, whatsappHref } from '@/lib/config';
+import { primaryNav, companyNav } from '@/lib/nav';
 import { Icon } from '@/components/ui/Icon';
 import { MobileDrawer } from './MobileDrawer';
 import { LocaleSwitcher } from './LocaleSwitcher';
@@ -10,10 +10,27 @@ export async function Header({ locale }: { locale: string }) {
   const t = await getTranslations('nav');
   const tc = await getTranslations('common');
   const items = primaryNav().map((i) => ({ ...i, label: t(i.labelKey) }));
+  /**
+   * The drawer gets everything the desktop bar has, plus what only the footer carries.
+   * On a phone the footer is a thousand pixels of scrolling away, so a menu that stops at
+   * the five primary links hides the reviews page — which for this client is the single
+   * strongest page on the site.
+   */
+  const primaryHrefs = new Set(items.map((i) => i.href));
+  const secondary = companyNav()
+    .filter((i) => !primaryHrefs.has(i.href))
+    .map((i) => ({ ...i, label: t(i.labelKey) }));
   const { contact, business } = siteConfig;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">
+    /**
+     * Deliberately NOT backdrop-blur. A blurred sticky header repaints the full viewport
+     * width on every scroll frame — measurable jank on the mid-range Android this
+     * customer base actually browses on — and `backdrop-filter` makes the header the
+     * containing block for `position: fixed` descendants, which is what broke the mobile
+     * drawer. Opaque surface, one hairline border, no compositing cost.
+     */
+    <header className="sticky top-0 z-40 border-b border-line bg-surface">
       <div className="container-site flex items-center justify-between gap-6 py-3">
         <Link href="/" className="flex flex-col leading-tight">
           <span className="font-display text-xl font-bold text-ink">{business.displayName}</span>
@@ -57,8 +74,11 @@ export async function Header({ locale }: { locale: string }) {
           </a>
           <MobileDrawer
             items={items}
+            secondary={secondary}
             phoneHref={contact.phone}
             phoneDisplay={contact.phoneDisplay}
+            whatsappHref={whatsappHref()}
+            title={business.displayName}
           />
         </div>
       </div>

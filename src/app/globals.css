@@ -136,3 +136,29 @@
   max-width: var(--hw-container-prose);
   margin-inline: auto;
 }
+
+/*
+  The mobile drawer's slide-in and scrim fade are CSS transitions on the component, not
+  keyframes, so a throttled tab degrades to an instant jump rather than stranding the
+  panel off-screen. What stays global is the reduced-motion opt-out below: a panel that
+  flies across the viewport is a real problem for a vestibular-disorder visitor, and this
+  customer base skews older.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  /* One visible focus ring for the whole site. Without it the drawer's focus trap is
+     technically correct and practically invisible. */
+  :focus-visible {
+    outline: 3px solid var(--color-focus-ring);
+    outline-offset: 2px;
+    border-radius: var(--hw-radius-sm);
+  }
+}
